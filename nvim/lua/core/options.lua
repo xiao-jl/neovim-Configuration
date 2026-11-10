@@ -16,6 +16,11 @@ opt.wrap = false
 -- 光标行
 opt.cursorline = true
 
+-- 光标：平时不设，交给 Konsole profile（方块 + 动效）；插入模式临时换成常亮竖线
+opt.guicursor = ""
+vim.api.nvim_create_autocmd("InsertEnter", { command = "set guicursor=i:ver25" })
+vim.api.nvim_create_autocmd("InsertLeave", { command = "set guicursor=" })
+
 -- 启用鼠标
 opt.mouse:append("a")
 

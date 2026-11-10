@@ -41,6 +41,13 @@ require("lazy").setup({
   { "lewis6991/gitsigns.nvim" }, -- 左侧 git 提示
 
   { "nvim-telescope/telescope.nvim", version = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } }, -- 文件检索
+
+  -- 调试（nvim-dap）：Java / C / C++ / Python，适配器由 mason 装
+  { "mfussenegger/nvim-dap" },
+  { "rcarriga/nvim-dap-ui", dependencies = { "nvim-neotest/nvim-nio" } },
+  { "theHamsta/nvim-dap-virtual-text" },
+  { "jay-babu/mason-nvim-dap.nvim", dependencies = { "williamboman/mason.nvim" } },
+  { "mfussenegger/nvim-jdtls", dependencies = { "mfussenegger/nvim-dap" } }, -- Java
 }, {
   -- 保持原 packer 的立即加载行为：所有插件启动时加载，缺失的自动安装
   default = { lazy = false },
