@@ -18,15 +18,15 @@ Neovim的一件配置脚本
 
 * 报错尝试多保存几遍
 
-## 键位
-
-```
-.nvim/lua/core/keymaps.lua
-```
-
 ### AI Agent
 
 ```
 帮我配置Neovim配置
 项目地址：https://github.com/xiao-jl/neovim-Configuration
+```
+
+## 键位
+
+```
+.nvim/lua/core/keymaps.lua
 ```
